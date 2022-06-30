@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <body>
+    <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link
+        rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📚</text></svg>"
+      />
+
+      <link rel="stylesheet" href="styles.css" />
+      <title>Library</title>
+    </head>
+
+    <header>
+      <h1 class="title">book library</h1>
+      <button class="btnAdd">add +</button>
+    </header>
+    <main>
+      <form id="form" class="display">
+        <div>
+          <label>title</label>
+          <input
+            type="text"
+            name="title"
+            id="input_title"
+            placeholder="The Hobbit"
+          />
+        </div>
+        <div>
+          <label>author</label>
+          <input
+            type="text"
+            name="author"
+            id="input_author"
+            placeholder="J. R. R. Tolkien"
+          />
+        </div>
+        <div>
+          <label>number of pages</label>
+          <input
+            type="number"
+            name="pages"
+            id="input_pages"
+            min="1"
+            placeholder="310"
+          />
+        </div>
+        <div class="div_read">
+          <label for="read">Do you read?</label>
+          <input type="checkbox" name="read" id="read" />
+        </div>
+        <button type="button" id="submitBtn" class="submitBtn">Submit</button>
+        <button type="button" id="closeBtn">Close</button>
+      </form>
+
+      <div id="library">
+        <div class="categories">
+          <p class="categories_text">title_</p>
+          <p class="categories_text">author_</p>
+          <p class="categories_text">pages_</p>
+          <p class="categories_text">do you read_?</p>
+        </div>
+      </div>
+    </main>
+  </body>
+  <script src="script.js" defer></script>
+</html>
